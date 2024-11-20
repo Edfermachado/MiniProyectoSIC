@@ -1,89 +1,95 @@
 const d = document;
 
-d.addEventListener("DOMContentLoaded", (e) => {
-  focusON();
+const ctx1 = document.getElementById("chart-main");
+const ctx2 = document.getElementById("chart-side-1");
+const ctx3 = document.getElementById("chart-side-2");
+
+new Chart(ctx1, {
+  type: "line",
+  data: {
+    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: "#aaadff",
+        fill: true,
+        borderWidth: 1,
+      },
+    ],
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
+  },
 });
 
-function focusON() {
-  const $graphs = d.querySelectorAll(".graph");
-  const $grid = d.getElementById("grid-container");
-  const $outFocusBtn = d.querySelector(".out-focus-btn");
+new Chart(ctx2, {
+  type: "doughnut",
+  data: {
+    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    datasets: [
+      {
+        label: "My First Dataset",
+        data: [300, 50, 100],
+        backgroundColor: [
+          "rgb(255, 99, 132)",
+          "rgb(54, 162, 235)",
+          "rgb(255, 205, 86)",
+        ],
+        hoverOffset: 4,
+      },
+    ],
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
+  },
+});
 
-  const gridAreas = [
-    "grid-area-1",
-    "grid-area-2",
-    "grid-area-3",
-    "grid-area-4",
-    "grid-area-5",
-  ];
-
-  $graphs.forEach((graph, index) => {
-    graph.addEventListener("click", () => {
-      // Remove all grid-area classes from all graphs
-      $graphs.forEach((item) => {
-        item.classList.remove(...gridAreas);
-      });
-
-      // Add the active class to the clicked graph and the appropriate grid-area class
-      graph.classList.add("grid-area-1"); // Replace "active" with your desired class
-
-      let j = 1;
-      for (let i = 0; i < $graphs.length; i++) {
-        if ($graphs[i] !== graph) {
-          $graphs[i].classList.add(gridAreas[j]);
-          j++;
-        }
-      }
-
-      // Adjust the grid layout as needed
-      $grid.classList.add("grid-focus");
-      $outFocusBtn.classList.remove("disabled");
-    });
-  });
-
-  $outFocusBtn.addEventListener("click", () => {
-    $graphs.forEach((item) => {
-      item.classList.remove(...gridAreas);
-      $grid.classList.remove("grid-focus");
-      $outFocusBtn.classList.add("disabled");
-    });
-  });
-}
-
-function gridBlackBgDelay() {
-  const elemento = d.getElementById("grid-container");
-
-  setTimeout(() => {
-    elemento.style.backgroundColor = "black";
-  }, 2000);
-}
-
-function hiddenMenu() {
-  const $btn = d.querySelector(".menu-btn");
-  const $window = d.querySelector(".window");
-  const $flex = d.querySelector("body");
-  const $main = d.querySelector(".main");
-  const $inv = d.querySelector(".invisible-exit");
-
-  $inv.addEventListener("click", () => {
-    $window.classList.toggle("disabled");
-    $window.classList.toggle("window-view");
-    $flex.classList.toggle("window-flex");
-    $main.classList.toggle("window-main");
-    $inv.classList.toggle("disabled");
-  });
-
-  $btn.addEventListener("click", () => {
-    $window.classList.toggle("disabled");
-    $window.classList.toggle("window-view");
-    $flex.classList.toggle("window-flex");
-    $main.classList.toggle("window-main");
-    $inv.classList.toggle("disabled");
-  });
-}
-
-d.addEventListener("DOMContentLoaded", (e) => {
-  hiddenMenu();
-  gridBlackBgDelay();
-  focusON();
+new Chart(ctx3, {
+  type: "pie",
+  data: {
+    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    datasets: [
+      {
+        label: "# of Votes",
+        data: [12, 19, 3, 5, 2, 3],
+        borderColor: "#36A2EB",
+        backgroundColor: [
+          "rgba(255, 99, 132, 0.2)",
+          "rgba(255, 159, 64, 0.2)",
+          "rgba(255, 205, 86, 0.2)",
+          "rgba(75, 192, 192, 0.2)",
+          "rgba(54, 162, 235, 0.2)",
+          "rgba(153, 102, 255, 0.2)",
+          "rgba(201, 203, 207, 0.2)",
+        ],
+        borderColor: [
+          "rgb(255, 99, 132)",
+          "rgb(255, 159, 64)",
+          "rgb(255, 205, 86)",
+          "rgb(75, 192, 192)",
+          "rgb(54, 162, 235)",
+          "rgb(153, 102, 255)",
+          "rgb(201, 203, 207)",
+        ],
+        fill: true,
+        borderWidth: 1,
+      },
+    ],
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true,
+      },
+    },
+  },
 });

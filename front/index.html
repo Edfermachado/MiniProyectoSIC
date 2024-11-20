@@ -5,47 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tkm Egui</title>
     <link rel="stylesheet" href="styles/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <div class="main">
-      <button class="menu-btn">
-        <span class="material-symbols-outlined"> more_vert </span>
-      </button>
-      <div class="disabled window">
-        <ul>
-          <li class="menu-item"></li>
-          <li class="menu-item"></li>
-          <li class="menu-item"></li>
-          <li class="menu-item"></li>
-          <li class="menu-item"></li>
-        </ul>
-      </div>
-      <div class="invisible-exit disabled"></div>
-      <div id="grid-container" class="grid-container">
-        <button class="out-focus-btn disabled">
-          <span class="material-symbols-outlined"> arrow_back_ios </span>
-        </button>
-        <div id="graph-el1" class="graph">
-          <img src="https://picsum.photos/1000/1000" alt="Imagen de ejemplo" />
+    <main class="main">
+      <h1>Título del Proyecto</h1>
+      <div class="flex">
+        <div class="chart-main chart-box">
+          <figure class="chart-info">
+            <h2>Comparativa 1</h2>
+            <canvas id="chart-main"></canvas>
+          </figure>
         </div>
-        <div id="graph-el2" class="graph">
-          <img src="https://picsum.photos/900/900" alt="Imagen de ejemplo" />
-        </div>
-        <div id="graph-el3" class="graph">
-          <img src="https://picsum.photos/800/800" alt="Imagen de ejemplo" />
-        </div>
-        <div id="graph-el4" class="graph">
-          <img src="https://picsum.photos/1100/1100" alt="Imagen de ejemplo" />
-        </div>
-        <div id="graph-el5" class="graph">
-          <img src="https://picsum.photos/1200/1200" alt="Imagen de ejemplo" />
+        <div class="chart-side chart-box">
+          <figure class="chart-side-box">
+            <h3>h3 title</h3>
+            <canvas id="chart-side-1"></canvas>
+          </figure>
+          <figure class="chart-side-box">
+            <h3>h3 title</h3>
+            <canvas id="chart-side-2"></canvas>
+          </figure>
         </div>
       </div>
-    </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="scripts/scripts.js"></script>
   </body>
 </html>
