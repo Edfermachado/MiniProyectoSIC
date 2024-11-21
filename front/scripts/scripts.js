@@ -7,10 +7,10 @@ const ctx3 = document.getElementById("chart-side-2");
 new Chart(ctx1, {
   type: "line",
   data: {
-    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+    labels: ["2020", "2021", "2022", "2023", "2024", "2025"],
     datasets: [
       {
-        label: "# of Votes",
+        label: "# Salarys",
         data: [12, 19, 3, 5, 2, 3],
         backgroundColor: "#aaadff",
         fill: true,
