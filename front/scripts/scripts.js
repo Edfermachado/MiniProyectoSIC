@@ -5,6 +5,7 @@ const ctx2 = document.getElementById("chart-side-1");
 const ctx3 = document.getElementById("chart-side-2");
 const $select = d.getElementById("chart-main-option");
 
+<<<<<<< HEAD
 const loadMainChart = () => {
   let localOption = localStorage.getItem("select-option");
 <<<<<<< HEAD
@@ -215,6 +216,19 @@ const loadMainChart = () => {
             borderWidth: 1,
           },
         ],
+=======
+new Chart(ctx1, {
+  type: "line",
+  data: {
+    labels: ["2020", "2021", "2022", "2023", "2024", "2025"],
+    datasets: [
+      {
+        label: "# Salarys",
+        data: [12, 19, 3, 5, 2, 3],
+        backgroundColor: "#aaadff",
+        fill: true,
+        borderWidth: 1,
+>>>>>>> 2b9427a (Update scripts.js)
       },
       options: {
         scales: {
