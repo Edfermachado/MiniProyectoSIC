@@ -6,6 +6,35 @@ const ctx3 = document.getElementById("chart-side-2");
 const $select = d.getElementById("chart-main-option");
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+async function fetchMultipleEndpoints() {
+  const DE = "http://127.0.0.1:8000/predict_salary/Data%20Engineer/2025";
+  const DS = "http://127.0.0.1:8000/predict_salary/Data%20Scientist/2025";
+  const DA = "http://127.0.0.1:8000/predict_salary/Data%20Analyst/2025";
+  const MLE =
+    "http://127.0.0.1:8000/predict_salary/Machine%20Learning%20Engineer/2025";
+
+  try {
+    const [response1, response2, response3] = await Promise.all([
+      fetch(endpoint1),
+      fetch(endpoint2),
+      fetch(endpoint3),
+    ]);
+
+    const data1 = await response1.json();
+    const data2 = await response2.json();
+    const data3 = await response3.json();
+
+    console.log("Datos del endpoint 1:", data1);
+    console.log("Datos del endpoint 2:", data2);
+    console.log("Datos del endpoint 3:", data3);
+  } catch (error) {
+    console.error("Error al realizar las peticiones:", error);
+  }
+}
+
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
 const loadMainChart = () => {
   let localOption = localStorage.getItem("select-option");
 <<<<<<< HEAD
@@ -37,9 +66,14 @@ const loadMainChart = () => {
                 backgroundColor: "rgba(170, 173, 255, 0.4)",
 =======
                 data: [100000, 99990, 80000, 85000, 76000, 95000],
+<<<<<<< HEAD
                 borderColor: "#aaadff",
                 backgroundColor: "rgba(170, 173, 255, 0.2)",
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+                borderColor: "rgb(170, 173, 255)",
+                backgroundColor: "rgba(170, 173, 255, 0.4)",
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
                 fill: true,
                 borderWidth: 1,
               },
@@ -50,9 +84,13 @@ const loadMainChart = () => {
               y: {
                 beginAtZero: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 max: 200000,
 =======
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+                max: 200000,
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
               },
             },
           },
@@ -79,9 +117,14 @@ const loadMainChart = () => {
                 backgroundColor: "rgba(255, 165, 0, 0.4)",
 =======
                 data: [100000, 99990, 80000, 85000, 76000, 95000],
+<<<<<<< HEAD
                 borderColor: "#aaadff",
                 backgroundColor: "#21c0d7",
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+                borderColor: "rgb(255, 165, 0)",
+                backgroundColor: "rgba(255, 165, 0, 0.4)",
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
                 fill: true,
                 borderWidth: 1,
               },
@@ -92,9 +135,13 @@ const loadMainChart = () => {
               y: {
                 beginAtZero: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 max: 200000,
 =======
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+                max: 200000,
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
               },
             },
           },
@@ -121,9 +168,14 @@ const loadMainChart = () => {
                 backgroundColor: "rgba(255, 192, 203, 0.4)",
 =======
                 data: [100000, 99990, 80000, 85000, 76000, 95000],
+<<<<<<< HEAD
                 borderColor: "#aaadff",
                 backgroundColor: "#d99e2b",
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+                borderColor: "rgb(255, 192, 203)",
+                backgroundColor: "rgba(255, 192, 203, 0.4)",
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
                 fill: true,
                 borderWidth: 1,
               },
@@ -134,9 +186,13 @@ const loadMainChart = () => {
               y: {
                 beginAtZero: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 max: 200000,
 =======
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+                max: 200000,
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
               },
             },
           },
@@ -163,9 +219,14 @@ const loadMainChart = () => {
                 backgroundColor: "rgba(34, 139, 34, 0.4)",
 =======
                 data: [100000, 99990, 80000, 85000, 76000, 95000],
+<<<<<<< HEAD
                 borderColor: "#aaadff",
                 backgroundColor: "#cd3a81",
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+                borderColor: "rgb(34, 139, 34)",
+                backgroundColor: "rgba(34, 139, 34, 0.4)",
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
                 fill: true,
                 borderWidth: 1,
               },
@@ -176,9 +237,13 @@ const loadMainChart = () => {
               y: {
                 beginAtZero: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 max: 300000,
 =======
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+                max: 200000,
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
               },
             },
           },
@@ -210,8 +275,12 @@ const loadMainChart = () => {
 =======
             data: [100000, 99990, 80000, 85000, 76000, 95000],
             borderColor: "#aaadff",
+<<<<<<< HEAD
             backgroundColor: "rgba(170, 173, 255, 0.2)",
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+            backgroundColor: "rgba(170, 173, 255, 0.4)",
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
             fill: true,
             borderWidth: 1,
           },
@@ -235,9 +304,13 @@ new Chart(ctx1, {
           y: {
             beginAtZero: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
             max: 200000,
 =======
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+            max: 200000,
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
           },
         },
       },
@@ -272,9 +345,14 @@ const selectMainChart = () => {
                 backgroundColor: "rgba(170, 173, 255, 0.4)",
 =======
                 data: [100000, 99990, 80000, 85000, 76000, 95000],
+<<<<<<< HEAD
                 borderColor: "#aaadff",
                 backgroundColor: "rgba(170, 173, 255, 0.2)",
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+                borderColor: "rgba(170, 173, 255)",
+                backgroundColor: "rgba(170, 173, 255, 0.4)",
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
                 fill: true,
                 borderWidth: 1,
               },
@@ -285,9 +363,13 @@ const selectMainChart = () => {
               y: {
                 beginAtZero: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 max: 200000,
 =======
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+                max: 200000,
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
               },
             },
           },
@@ -314,9 +396,14 @@ const selectMainChart = () => {
                 backgroundColor: "rgba(255, 165, 0, 0.4)",
 =======
                 data: [100000, 99990, 80000, 85000, 76000, 95000],
+<<<<<<< HEAD
                 borderColor: "#aaadff",
                 backgroundColor: "#21c0d7",
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+                borderColor: "rgba(255, 165, 0)",
+                backgroundColor: "rgba(255, 165, 0, 0.4)",
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
                 fill: true,
                 borderWidth: 1,
               },
@@ -327,9 +414,13 @@ const selectMainChart = () => {
               y: {
                 beginAtZero: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 max: 200000,
 =======
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+                max: 200000,
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
               },
             },
           },
@@ -356,9 +447,14 @@ const selectMainChart = () => {
                 backgroundColor: "rgba(255, 192, 203, 0.4)",
 =======
                 data: [100000, 99990, 80000, 85000, 76000, 95000],
+<<<<<<< HEAD
                 borderColor: "#aaadff",
                 backgroundColor: "#d99e2b",
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+                borderColor: "rgb(255, 192, 203)",
+                backgroundColor: "rgba(255, 192, 203, 0.4)",
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
                 fill: true,
                 borderWidth: 1,
               },
@@ -369,9 +465,13 @@ const selectMainChart = () => {
               y: {
                 beginAtZero: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 max: 200000,
 =======
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+                max: 200000,
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
               },
             },
           },
@@ -398,9 +498,14 @@ const selectMainChart = () => {
                 backgroundColor: "rgba(34, 139, 34, 0.4)",
 =======
                 data: [100000, 99990, 80000, 85000, 76000, 95000],
+<<<<<<< HEAD
                 borderColor: "#aaadff",
                 backgroundColor: "#cd3a81",
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+                borderColor: "rgb(34, 139, 34)",
+                backgroundColor: "rgba(34, 139, 34, 0.4)",
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
                 fill: true,
                 borderWidth: 1,
               },
@@ -411,9 +516,13 @@ const selectMainChart = () => {
               y: {
                 beginAtZero: true,
 <<<<<<< HEAD
+<<<<<<< HEAD
                 max: 300000,
 =======
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+                max: 200000,
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
               },
             },
           },
@@ -444,11 +553,11 @@ const updateChartData = (chartId, data, label) => {
 //         data: [100000, 99990, 80000, 85000, 76000, 95000],
 //         borderColor: "#aaadff",
 //         backgroundColor: [
-//           "rgba(170, 173, 255, 0.2)",
-//           "rgba(170, 173, 255, 0.2)",
-//           "rgba(170, 173, 255, 0.2)",
-//           "rgba(170, 173, 255, 0.2)",
-//           "rgba(170, 173, 255, 0.2)",
+//           "rgba(170, 173, 255, 0.4)",
+//           "rgba(170, 173, 255, 0.4)",
+//           "rgba(170, 173, 255, 0.4)",
+//           "rgba(170, 173, 255, 0.4)",
+//           "rgba(170, 173, 255, 0.4)",
 //           "red",
 //         ],
 //         fill: true,
@@ -474,18 +583,29 @@ new Chart(ctx2, {
       "Data Scientist",
       "Data Analyst",
       "Machine Learning Engineer",
+<<<<<<< HEAD
       "Otros",
+=======
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
     ],
     datasets: [
       {
         label: "Desarrolladores en el Área de datos",
+<<<<<<< HEAD
         data: [1307, 1243, 910, 629, 2510],
+=======
+        data: [1307, 1243, 910, 629],
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
         backgroundColor: [
           "rgba(255, 99, 132)",
           "rgba(75, 192, 192)",
           "rgba(255, 205, 86)",
           "rgba(237, 125, 229)",
+<<<<<<< HEAD
           "rgba(156, 153, 204, 0.2)",
+=======
+          "rgba(54, 162, 235)",
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
         ],
         hoverOffset: 4,
       },
@@ -509,6 +629,7 @@ new Chart(ctx2, {
 new Chart(ctx3, {
   type: "pie",
   data: {
+<<<<<<< HEAD
     labels: ["United States", "United Kingdom", "Canada", "Germany", "Others"],
     datasets: [
       {
@@ -520,6 +641,13 @@ new Chart(ctx3, {
         data: [(12, 19, 3, 5, 2, 3)],
         borderColor: "#36A2EB",
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+    labels: ["United States", "United Kingdom", "Canada", "Germany", "Spain"],
+    datasets: [
+      {
+        label: "Desarrolladores en el país",
+        data: [12, 19, 3, 5, 2, 3],
+>>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
         backgroundColor: [
           "rgba(255, 99, 132, 0.4)",
           "rgba(255, 159, 64, 0.4)",
@@ -563,9 +691,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   selectMainChart();
 });
 
-fetch(
-  "http://127.0.0.1:8000/predict_salary/Data%20Scientist/2022?csv_file=data_science_salaries.csv"
-)
+fetch("http://127.0.0.1:8000/predict_salary/Data%20Scientist/2025")
   .then((response) => response.json())
   .then((data) => {
     console.log(data); // Aquí tendrás el número entero
