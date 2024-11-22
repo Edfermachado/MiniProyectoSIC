@@ -364,3 +364,14 @@ d.addEventListener("DOMContentLoaded", (e) => {
   loadMainChart();
   selectMainChart();
 });
+
+fetch(
+  "http://127.0.0.1:8000/predict_salary/Data%20Scientist/2022?csv_file=data_science_salaries.csv"
+)
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data); // Aquí tendrás el número entero
+  })
+  .catch((error) => {
+    console.error("Error:", error);
+  });
