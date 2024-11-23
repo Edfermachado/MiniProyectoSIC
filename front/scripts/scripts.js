@@ -603,6 +603,7 @@ const selectMainChart = () => {
 <<<<<<< HEAD
 =======
 
+<<<<<<< HEAD
 const updateChartData = (chartId, data, label) => {
   const chart = Chart.getChart(chartId);
   chart.data.datasets[0].data = data;
@@ -642,6 +643,8 @@ const updateChartData = (chartId, data, label) => {
 // });
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
 
+=======
+>>>>>>> 98f25d1 (Fixing More Deploy Errors with requirements - adding libraries)
 new Chart(ctx2, {
   type: "doughnut",
   data: {

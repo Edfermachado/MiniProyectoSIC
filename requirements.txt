@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 uvicorn
 pandas
@@ -62,3 +63,9 @@ wcwidth
 =======
 uvicorn
 >>>>>>> 64827fa (Fixing More Deploy Errors with requirements - adding uvicorn)
+=======
+uvicorn
+pandas
+scikit-learn
+matplotlib
+>>>>>>> 98f25d1 (Fixing More Deploy Errors with requirements - adding libraries)
