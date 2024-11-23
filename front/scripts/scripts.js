@@ -441,6 +441,12 @@ new Chart(ctx3, {
         beginAtZero: true,
       },
     },
+    plugins: {
+      legend: {
+        position: "top",
+        align: "start",
+      },
+    },
   },
 });
 
