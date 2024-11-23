@@ -709,6 +709,7 @@ new Chart(ctx3, {
   type: "pie",
   data: {
 <<<<<<< HEAD
+<<<<<<< HEAD
     labels: ["United States", "United Kingdom", "Canada", "Germany", "Others"],
     datasets: [
       {
@@ -722,6 +723,9 @@ new Chart(ctx3, {
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
 =======
     labels: ["United States", "United Kingdom", "Canada", "Germany", "Spain"],
+=======
+    labels: ["United States", "United Kingdom", "Canada", "Germany", "Others"],
+>>>>>>> a90e9f6 (Ajustes información de Gráficas)
     datasets: [
       {
         label: "Desarrolladores en el país",
