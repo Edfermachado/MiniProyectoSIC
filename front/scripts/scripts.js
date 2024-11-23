@@ -326,44 +326,6 @@ const selectMainChart = () => {
   });
 };
 
-const updateChartData = (chartId, data, label) => {
-  const chart = Chart.getChart(chartId);
-  chart.data.datasets[0].data = data;
-  chart.data.datasets[0].label = label;
-  chart.update();
-};
-
-// mainChart = new Chart(ctx1, {
-//   type: "line",
-//   data: {
-//     labels: ["2020", "2021", "2022", "2023", "2024", "2025"],
-//     datasets: [
-//       {
-//         label: "# of Votes",
-//         data: [100000, 99990, 80000, 85000, 76000, 95000],
-//         borderColor: "#aaadff",
-//         backgroundColor: [
-//           "rgba(170, 173, 255, 0.4)",
-//           "rgba(170, 173, 255, 0.4)",
-//           "rgba(170, 173, 255, 0.4)",
-//           "rgba(170, 173, 255, 0.4)",
-//           "rgba(170, 173, 255, 0.4)",
-//           "red",
-//         ],
-//         fill: true,
-//         borderWidth: 1,
-//       },
-//     ],
-//   },
-//   options: {
-//     scales: {
-//       y: {
-//         beginAtZero: true,
-//       },
-//     },
-//   },
-// });
-
 new Chart(ctx2, {
   type: "doughnut",
   data: {
