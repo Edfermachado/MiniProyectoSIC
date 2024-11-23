@@ -7,6 +7,7 @@ const $select = d.getElementById("chart-main-option");
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 async function fetchMultipleEndpoints() {
   const DE = "http://127.0.0.1:8000/predict_salary/Data%20Engineer/2025";
@@ -41,6 +42,10 @@ const loadMainChart = () => {
 =======
   console.log(localOption);
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
+=======
+const loadMainChart = () => {
+  let localOption = localStorage.getItem("select-option");
+>>>>>>> e011ce1 (Cambiando a información estática)
   if (localOption !== undefined && localOption !== null) {
     $select.value = localOption;
 
@@ -54,6 +59,9 @@ const loadMainChart = () => {
               {
                 label: "Data Engineer Salaries Per Year",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e011ce1 (Cambiando a información estática)
                 data: [105382, 119449, 133517, 147585, 161653, 175721],
                 borderColor: [
                   "rgb(170, 173, 255)",
@@ -63,6 +71,7 @@ const loadMainChart = () => {
                   "rgb(170, 173, 255)",
                   "red",
                 ],
+<<<<<<< HEAD
                 backgroundColor: "rgba(170, 173, 255, 0.4)",
 =======
                 data: [100000, 99990, 80000, 85000, 76000, 95000],
@@ -72,6 +81,8 @@ const loadMainChart = () => {
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
 =======
                 borderColor: "rgb(170, 173, 255)",
+=======
+>>>>>>> e011ce1 (Cambiando a información estática)
                 backgroundColor: "rgba(170, 173, 255, 0.4)",
 >>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
                 fill: true,
@@ -105,6 +116,9 @@ const loadMainChart = () => {
               {
                 label: "Data Scientist Salaries Per Year",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e011ce1 (Cambiando a información estática)
                 data: [89267, 110839, 132411, 153982, 175554, 197125],
                 borderColor: [
                   "rgb(255, 165, 0)",
@@ -114,6 +128,7 @@ const loadMainChart = () => {
                   "rgb(255, 165, 0)",
                   "red",
                 ],
+<<<<<<< HEAD
                 backgroundColor: "rgba(255, 165, 0, 0.4)",
 =======
                 data: [100000, 99990, 80000, 85000, 76000, 95000],
@@ -123,6 +138,8 @@ const loadMainChart = () => {
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
 =======
                 borderColor: "rgb(255, 165, 0)",
+=======
+>>>>>>> e011ce1 (Cambiando a información estática)
                 backgroundColor: "rgba(255, 165, 0, 0.4)",
 >>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
                 fill: true,
@@ -156,6 +173,9 @@ const loadMainChart = () => {
               {
                 label: "Data Analyst Salaries Per Year",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e011ce1 (Cambiando a información estática)
                 data: [89321, 95528, 101734, 107941, 114147, 120353],
                 borderColor: [
                   "rgb(255, 192, 203)",
@@ -165,6 +185,7 @@ const loadMainChart = () => {
                   "rgb(255, 192, 203)",
                   "red",
                 ],
+<<<<<<< HEAD
                 backgroundColor: "rgba(255, 192, 203, 0.4)",
 =======
                 data: [100000, 99990, 80000, 85000, 76000, 95000],
@@ -174,6 +195,8 @@ const loadMainChart = () => {
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
 =======
                 borderColor: "rgb(255, 192, 203)",
+=======
+>>>>>>> e011ce1 (Cambiando a información estática)
                 backgroundColor: "rgba(255, 192, 203, 0.4)",
 >>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
                 fill: true,
@@ -207,6 +230,9 @@ const loadMainChart = () => {
               {
                 label: "Machine Learning Engineer Salaries Per Year",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e011ce1 (Cambiando a información estática)
                 data: [83576, 115836, 148095, 180354, 212614, 244873],
                 borderColor: [
                   "rgb(34, 139, 34)",
@@ -216,6 +242,7 @@ const loadMainChart = () => {
                   "rgb(34, 139, 34)",
                   "red",
                 ],
+<<<<<<< HEAD
                 backgroundColor: "rgba(34, 139, 34, 0.4)",
 =======
                 data: [100000, 99990, 80000, 85000, 76000, 95000],
@@ -225,6 +252,8 @@ const loadMainChart = () => {
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
 =======
                 borderColor: "rgb(34, 139, 34)",
+=======
+>>>>>>> e011ce1 (Cambiando a información estática)
                 backgroundColor: "rgba(34, 139, 34, 0.4)",
 >>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
                 fill: true,
@@ -238,12 +267,16 @@ const loadMainChart = () => {
                 beginAtZero: true,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 max: 300000,
 =======
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
 =======
                 max: 200000,
 >>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
+=======
+                max: 300000,
+>>>>>>> e011ce1 (Cambiando a información estática)
               },
             },
           },
@@ -262,6 +295,9 @@ const loadMainChart = () => {
           {
             label: "Data Engineer Salaries Per Year",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e011ce1 (Cambiando a información estática)
             data: [105382, 119449, 133517, 147585, 161653, 175721],
             borderColor: [
               "rgb(170, 173, 255)",
@@ -271,6 +307,7 @@ const loadMainChart = () => {
               "rgb(170, 173, 255)",
               "red",
             ],
+<<<<<<< HEAD
             backgroundColor: "rgba(170, 173, 255, 0.4)",
 =======
             data: [100000, 99990, 80000, 85000, 76000, 95000],
@@ -279,6 +316,8 @@ const loadMainChart = () => {
             backgroundColor: "rgba(170, 173, 255, 0.2)",
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
 =======
+=======
+>>>>>>> e011ce1 (Cambiando a información estática)
             backgroundColor: "rgba(170, 173, 255, 0.4)",
 >>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
             fill: true,
@@ -333,6 +372,9 @@ const selectMainChart = () => {
               {
                 label: "Data Engineer Salaries Per Year",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e011ce1 (Cambiando a información estática)
                 data: [105382, 119449, 133517, 147585, 161653, 175721],
                 borderColor: [
                   "rgb(170, 173, 255)",
@@ -342,6 +384,7 @@ const selectMainChart = () => {
                   "rgb(170, 173, 255)",
                   "red",
                 ],
+<<<<<<< HEAD
                 backgroundColor: "rgba(170, 173, 255, 0.4)",
 =======
                 data: [100000, 99990, 80000, 85000, 76000, 95000],
@@ -351,6 +394,8 @@ const selectMainChart = () => {
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
 =======
                 borderColor: "rgba(170, 173, 255)",
+=======
+>>>>>>> e011ce1 (Cambiando a información estática)
                 backgroundColor: "rgba(170, 173, 255, 0.4)",
 >>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
                 fill: true,
@@ -384,6 +429,9 @@ const selectMainChart = () => {
               {
                 label: "Data Scientist Salaries Per Year",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e011ce1 (Cambiando a información estática)
                 data: [89267, 110839, 132411, 153982, 175554, 197125],
                 borderColor: [
                   "rgb(255, 165, 0)",
@@ -393,6 +441,7 @@ const selectMainChart = () => {
                   "rgb(255, 165, 0)",
                   "red",
                 ],
+<<<<<<< HEAD
                 backgroundColor: "rgba(255, 165, 0, 0.4)",
 =======
                 data: [100000, 99990, 80000, 85000, 76000, 95000],
@@ -402,6 +451,8 @@ const selectMainChart = () => {
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
 =======
                 borderColor: "rgba(255, 165, 0)",
+=======
+>>>>>>> e011ce1 (Cambiando a información estática)
                 backgroundColor: "rgba(255, 165, 0, 0.4)",
 >>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
                 fill: true,
@@ -435,6 +486,9 @@ const selectMainChart = () => {
               {
                 label: "Data Analyst Salaries Per Year",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e011ce1 (Cambiando a información estática)
                 data: [89321, 95528, 101734, 107941, 114147, 120353],
                 borderColor: [
                   "rgb(255, 192, 203)",
@@ -444,6 +498,7 @@ const selectMainChart = () => {
                   "rgb(255, 192, 203)",
                   "red",
                 ],
+<<<<<<< HEAD
                 backgroundColor: "rgba(255, 192, 203, 0.4)",
 =======
                 data: [100000, 99990, 80000, 85000, 76000, 95000],
@@ -453,6 +508,8 @@ const selectMainChart = () => {
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
 =======
                 borderColor: "rgb(255, 192, 203)",
+=======
+>>>>>>> e011ce1 (Cambiando a información estática)
                 backgroundColor: "rgba(255, 192, 203, 0.4)",
 >>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
                 fill: true,
@@ -486,6 +543,9 @@ const selectMainChart = () => {
               {
                 label: "Machine Learning Engineer Salaries Per Year",
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> e011ce1 (Cambiando a información estática)
                 data: [83576, 115836, 148095, 180354, 212614, 244873],
                 borderColor: [
                   "rgb(34, 139, 34)",
@@ -495,6 +555,7 @@ const selectMainChart = () => {
                   "rgb(34, 139, 34)",
                   "red",
                 ],
+<<<<<<< HEAD
                 backgroundColor: "rgba(34, 139, 34, 0.4)",
 =======
                 data: [100000, 99990, 80000, 85000, 76000, 95000],
@@ -504,6 +565,8 @@ const selectMainChart = () => {
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
 =======
                 borderColor: "rgb(34, 139, 34)",
+=======
+>>>>>>> e011ce1 (Cambiando a información estática)
                 backgroundColor: "rgba(34, 139, 34, 0.4)",
 >>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
                 fill: true,
@@ -517,12 +580,16 @@ const selectMainChart = () => {
                 beginAtZero: true,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                 max: 300000,
 =======
 >>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
 =======
                 max: 200000,
 >>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
+=======
+                max: 300000,
+>>>>>>> e011ce1 (Cambiando a información estática)
               },
             },
           },
@@ -584,28 +651,40 @@ new Chart(ctx2, {
       "Data Analyst",
       "Machine Learning Engineer",
 <<<<<<< HEAD
+<<<<<<< HEAD
       "Otros",
 =======
 >>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
+=======
+      "Otros",
+>>>>>>> e011ce1 (Cambiando a información estática)
     ],
     datasets: [
       {
         label: "Desarrolladores en el Área de datos",
 <<<<<<< HEAD
+<<<<<<< HEAD
         data: [1307, 1243, 910, 629, 2510],
 =======
         data: [1307, 1243, 910, 629],
 >>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
+=======
+        data: [1307, 1243, 910, 629, 2510],
+>>>>>>> e011ce1 (Cambiando a información estática)
         backgroundColor: [
           "rgba(255, 99, 132)",
           "rgba(75, 192, 192)",
           "rgba(255, 205, 86)",
           "rgba(237, 125, 229)",
 <<<<<<< HEAD
+<<<<<<< HEAD
           "rgba(156, 153, 204, 0.2)",
 =======
           "rgba(54, 162, 235)",
 >>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
+=======
+          "rgba(156, 153, 204, 0.2)",
+>>>>>>> e011ce1 (Cambiando a información estática)
         ],
         hoverOffset: 4,
       },
@@ -646,8 +725,12 @@ new Chart(ctx3, {
     datasets: [
       {
         label: "Desarrolladores en el país",
+<<<<<<< HEAD
         data: [12, 19, 3, 5, 2, 3],
 >>>>>>> 5c55feb (Cambios a las gráficas e inserción de datos)
+=======
+        data: [5305, 401, 241, 71, 581],
+>>>>>>> e011ce1 (Cambiando a información estática)
         backgroundColor: [
           "rgba(255, 99, 132, 0.4)",
           "rgba(255, 159, 64, 0.4)",
@@ -690,12 +773,3 @@ d.addEventListener("DOMContentLoaded", (e) => {
   loadMainChart();
   selectMainChart();
 });
-
-fetch("http://127.0.0.1:8000/predict_salary/Data%20Scientist/2025")
-  .then((response) => response.json())
-  .then((data) => {
-    console.log(data); // Aquí tendrás el número entero
-  })
-  .catch((error) => {
-    console.error("Error:", error);
-  });
