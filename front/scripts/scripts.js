@@ -407,7 +407,7 @@ new Chart(ctx2, {
 new Chart(ctx3, {
   type: "pie",
   data: {
-    labels: ["United States", "United Kingdom", "Canada", "Germany", "Spain"],
+    labels: ["United States", "United Kingdom", "Canada", "Germany", "Others"],
     datasets: [
       {
         label: "Desarrolladores en el país",
