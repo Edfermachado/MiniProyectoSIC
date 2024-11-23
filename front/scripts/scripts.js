@@ -7,6 +7,10 @@ const $select = d.getElementById("chart-main-option");
 
 const loadMainChart = () => {
   let localOption = localStorage.getItem("select-option");
+<<<<<<< HEAD
+=======
+  console.log(localOption);
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
   if (localOption !== undefined && localOption !== null) {
     $select.value = localOption;
 
@@ -19,6 +23,7 @@ const loadMainChart = () => {
             datasets: [
               {
                 label: "Data Engineer Salaries Per Year",
+<<<<<<< HEAD
                 data: [105382, 119449, 133517, 147585, 161653, 175721],
                 borderColor: [
                   "rgb(170, 173, 255)",
@@ -29,6 +34,11 @@ const loadMainChart = () => {
                   "red",
                 ],
                 backgroundColor: "rgba(170, 173, 255, 0.4)",
+=======
+                data: [100000, 99990, 80000, 85000, 76000, 95000],
+                borderColor: "#aaadff",
+                backgroundColor: "rgba(170, 173, 255, 0.2)",
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
                 fill: true,
                 borderWidth: 1,
               },
@@ -38,7 +48,10 @@ const loadMainChart = () => {
             scales: {
               y: {
                 beginAtZero: true,
+<<<<<<< HEAD
                 max: 200000,
+=======
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
               },
             },
           },
@@ -52,6 +65,7 @@ const loadMainChart = () => {
             datasets: [
               {
                 label: "Data Scientist Salaries Per Year",
+<<<<<<< HEAD
                 data: [89267, 110839, 132411, 153982, 175554, 197125],
                 borderColor: [
                   "rgb(255, 165, 0)",
@@ -62,6 +76,11 @@ const loadMainChart = () => {
                   "red",
                 ],
                 backgroundColor: "rgba(255, 165, 0, 0.4)",
+=======
+                data: [100000, 99990, 80000, 85000, 76000, 95000],
+                borderColor: "#aaadff",
+                backgroundColor: "#21c0d7",
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
                 fill: true,
                 borderWidth: 1,
               },
@@ -71,7 +90,10 @@ const loadMainChart = () => {
             scales: {
               y: {
                 beginAtZero: true,
+<<<<<<< HEAD
                 max: 200000,
+=======
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
               },
             },
           },
@@ -85,6 +107,7 @@ const loadMainChart = () => {
             datasets: [
               {
                 label: "Data Analyst Salaries Per Year",
+<<<<<<< HEAD
                 data: [89321, 95528, 101734, 107941, 114147, 120353],
                 borderColor: [
                   "rgb(255, 192, 203)",
@@ -95,6 +118,11 @@ const loadMainChart = () => {
                   "red",
                 ],
                 backgroundColor: "rgba(255, 192, 203, 0.4)",
+=======
+                data: [100000, 99990, 80000, 85000, 76000, 95000],
+                borderColor: "#aaadff",
+                backgroundColor: "#d99e2b",
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
                 fill: true,
                 borderWidth: 1,
               },
@@ -104,7 +132,10 @@ const loadMainChart = () => {
             scales: {
               y: {
                 beginAtZero: true,
+<<<<<<< HEAD
                 max: 200000,
+=======
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
               },
             },
           },
@@ -118,6 +149,7 @@ const loadMainChart = () => {
             datasets: [
               {
                 label: "Machine Learning Engineer Salaries Per Year",
+<<<<<<< HEAD
                 data: [83576, 115836, 148095, 180354, 212614, 244873],
                 borderColor: [
                   "rgb(34, 139, 34)",
@@ -128,6 +160,11 @@ const loadMainChart = () => {
                   "red",
                 ],
                 backgroundColor: "rgba(34, 139, 34, 0.4)",
+=======
+                data: [100000, 99990, 80000, 85000, 76000, 95000],
+                borderColor: "#aaadff",
+                backgroundColor: "#cd3a81",
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
                 fill: true,
                 borderWidth: 1,
               },
@@ -137,7 +174,10 @@ const loadMainChart = () => {
             scales: {
               y: {
                 beginAtZero: true,
+<<<<<<< HEAD
                 max: 300000,
+=======
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
               },
             },
           },
@@ -155,6 +195,7 @@ const loadMainChart = () => {
         datasets: [
           {
             label: "Data Engineer Salaries Per Year",
+<<<<<<< HEAD
             data: [105382, 119449, 133517, 147585, 161653, 175721],
             borderColor: [
               "rgb(170, 173, 255)",
@@ -165,6 +206,11 @@ const loadMainChart = () => {
               "red",
             ],
             backgroundColor: "rgba(170, 173, 255, 0.4)",
+=======
+            data: [100000, 99990, 80000, 85000, 76000, 95000],
+            borderColor: "#aaadff",
+            backgroundColor: "rgba(170, 173, 255, 0.2)",
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
             fill: true,
             borderWidth: 1,
           },
@@ -174,7 +220,10 @@ const loadMainChart = () => {
         scales: {
           y: {
             beginAtZero: true,
+<<<<<<< HEAD
             max: 200000,
+=======
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
           },
         },
       },
@@ -196,6 +245,7 @@ const selectMainChart = () => {
             datasets: [
               {
                 label: "Data Engineer Salaries Per Year",
+<<<<<<< HEAD
                 data: [105382, 119449, 133517, 147585, 161653, 175721],
                 borderColor: [
                   "rgb(170, 173, 255)",
@@ -206,6 +256,11 @@ const selectMainChart = () => {
                   "red",
                 ],
                 backgroundColor: "rgba(170, 173, 255, 0.4)",
+=======
+                data: [100000, 99990, 80000, 85000, 76000, 95000],
+                borderColor: "#aaadff",
+                backgroundColor: "rgba(170, 173, 255, 0.2)",
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
                 fill: true,
                 borderWidth: 1,
               },
@@ -215,7 +270,10 @@ const selectMainChart = () => {
             scales: {
               y: {
                 beginAtZero: true,
+<<<<<<< HEAD
                 max: 200000,
+=======
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
               },
             },
           },
@@ -229,6 +287,7 @@ const selectMainChart = () => {
             datasets: [
               {
                 label: "Data Scientist Salaries Per Year",
+<<<<<<< HEAD
                 data: [89267, 110839, 132411, 153982, 175554, 197125],
                 borderColor: [
                   "rgb(255, 165, 0)",
@@ -239,6 +298,11 @@ const selectMainChart = () => {
                   "red",
                 ],
                 backgroundColor: "rgba(255, 165, 0, 0.4)",
+=======
+                data: [100000, 99990, 80000, 85000, 76000, 95000],
+                borderColor: "#aaadff",
+                backgroundColor: "#21c0d7",
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
                 fill: true,
                 borderWidth: 1,
               },
@@ -248,7 +312,10 @@ const selectMainChart = () => {
             scales: {
               y: {
                 beginAtZero: true,
+<<<<<<< HEAD
                 max: 200000,
+=======
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
               },
             },
           },
@@ -262,6 +329,7 @@ const selectMainChart = () => {
             datasets: [
               {
                 label: "Data Analyst Salaries Per Year",
+<<<<<<< HEAD
                 data: [89321, 95528, 101734, 107941, 114147, 120353],
                 borderColor: [
                   "rgb(255, 192, 203)",
@@ -272,6 +340,11 @@ const selectMainChart = () => {
                   "red",
                 ],
                 backgroundColor: "rgba(255, 192, 203, 0.4)",
+=======
+                data: [100000, 99990, 80000, 85000, 76000, 95000],
+                borderColor: "#aaadff",
+                backgroundColor: "#d99e2b",
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
                 fill: true,
                 borderWidth: 1,
               },
@@ -281,7 +354,10 @@ const selectMainChart = () => {
             scales: {
               y: {
                 beginAtZero: true,
+<<<<<<< HEAD
                 max: 200000,
+=======
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
               },
             },
           },
@@ -295,6 +371,7 @@ const selectMainChart = () => {
             datasets: [
               {
                 label: "Machine Learning Engineer Salaries Per Year",
+<<<<<<< HEAD
                 data: [83576, 115836, 148095, 180354, 212614, 244873],
                 borderColor: [
                   "rgb(34, 139, 34)",
@@ -305,6 +382,11 @@ const selectMainChart = () => {
                   "red",
                 ],
                 backgroundColor: "rgba(34, 139, 34, 0.4)",
+=======
+                data: [100000, 99990, 80000, 85000, 76000, 95000],
+                borderColor: "#aaadff",
+                backgroundColor: "#cd3a81",
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
                 fill: true,
                 borderWidth: 1,
               },
@@ -314,7 +396,10 @@ const selectMainChart = () => {
             scales: {
               y: {
                 beginAtZero: true,
+<<<<<<< HEAD
                 max: 300000,
+=======
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
               },
             },
           },
@@ -325,6 +410,47 @@ const selectMainChart = () => {
     }
   });
 };
+<<<<<<< HEAD
+=======
+
+const updateChartData = (chartId, data, label) => {
+  const chart = Chart.getChart(chartId);
+  chart.data.datasets[0].data = data;
+  chart.data.datasets[0].label = label;
+  chart.update();
+};
+
+// mainChart = new Chart(ctx1, {
+//   type: "line",
+//   data: {
+//     labels: ["2020", "2021", "2022", "2023", "2024", "2025"],
+//     datasets: [
+//       {
+//         label: "# of Votes",
+//         data: [100000, 99990, 80000, 85000, 76000, 95000],
+//         borderColor: "#aaadff",
+//         backgroundColor: [
+//           "rgba(170, 173, 255, 0.2)",
+//           "rgba(170, 173, 255, 0.2)",
+//           "rgba(170, 173, 255, 0.2)",
+//           "rgba(170, 173, 255, 0.2)",
+//           "rgba(170, 173, 255, 0.2)",
+//           "red",
+//         ],
+//         fill: true,
+//         borderWidth: 1,
+//       },
+//     ],
+//   },
+//   options: {
+//     scales: {
+//       y: {
+//         beginAtZero: true,
+//       },
+//     },
+//   },
+// });
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
 
 new Chart(ctx2, {
   type: "doughnut",
@@ -372,8 +498,14 @@ new Chart(ctx3, {
     labels: ["United States", "United Kingdom", "Canada", "Germany", "Others"],
     datasets: [
       {
+<<<<<<< HEAD
         label: "Desarrolladores en el país",
         data: [5305, 401, 241, 71, 581],
+=======
+        label: "# of Votes",
+        data: [(12, 19, 3, 5, 2, 3)],
+        borderColor: "#36A2EB",
+>>>>>>> ace6fb4 (Agregando interactividad en la Gráfica principal)
         backgroundColor: [
           "rgba(255, 99, 132, 0.4)",
           "rgba(255, 159, 64, 0.4)",
