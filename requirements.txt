@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 uvicorn
 pandas
@@ -58,3 +59,6 @@ typing_extensions
 tzdata
 wcwidth
 >>>>>>> 573fc02 (Preparando para deploy)
+=======
+uvicorn
+>>>>>>> 64827fa (Fixing More Deploy Errors with requirements - adding uvicorn)
